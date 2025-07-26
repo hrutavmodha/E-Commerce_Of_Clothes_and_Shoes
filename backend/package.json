@@ -1,0 +1,16 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "The backend directory for the server-side code of the project",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "author": "Hrutav Modha",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^17.2.1",
+        "express": "^5.1.0"
+    }
+}
