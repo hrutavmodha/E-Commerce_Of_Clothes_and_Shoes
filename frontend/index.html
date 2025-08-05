@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeDrive | Premium Car Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        
+    </style> -->
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Luxe<span>Drive</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#brands">Brands</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <span class="my_name" id="clock">00:00:00 AM</span>
+            <div class="cart-icon" id="cartIcon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your Dream Car With LuxeDrive</h1>
+            <p>Experience luxury redefined with our curated collection of premium vehicles from around the world.</p>
+            <div class="btn-group">
+                <a href="#brands" class="btn">Explore Collection</a>
+                <a href="#about" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="section" id="brands">
+        <div class="container">
+            <div class="section-title">
+                <h2>Premium Brands</h2>
+            </div>
+            <div class="brands-grid" id="brandsGrid">
+                <!-- Brand cards will be added here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Modal -->
+    <div class="modal" id="carsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalBrandTitle">Brand Cars</h3>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="cars-grid" id="carsGrid">
+                <!-- Car cards will be added here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- other object -->
+    <!-- <div class="other">
+        <div class="oth_content">
+            <div class="oth_header">
+                <h3 id="oth_object">other</h3>
+            </div>
+            <div class="oth_grid" id="oth_car_grid">
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>What Our Clients Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        LuxeDrive made my dream of owning a luxury car come true. Their service was impeccable and the entire process was seamless.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Sarah Johnson" class="author-img">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Business Executive</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        The team at LuxeDrive understood exactly what I was looking for. They found me the perfect car that exceeded all my expectations.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen" class="author-img">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Tech Entrepreneur</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        From the first consultation to the delivery of my new car, LuxeDrive provided exceptional service. I couldn't be happier with my purchase.
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Emily Rodriguez" class="author-img">
+                        <div class="author-info">
+                            <h4>Emily Rodriguez</h4>
+                            <p>Fashion Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2010, LuxeDrive began as a passion project for car enthusiasts who wanted to create a more personalized luxury car buying experience.</p>
+                    <p>Today, we've grown into a premier destination for discerning clients seeking exceptional vehicles with white-glove service.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-car"></i>
+                            </div>
+                            <div>
+                                <h4>Curated Collection</h4>
+                                <p>Each vehicle in our inventory is hand-selected for quality, performance, and style.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div>
+                                <h4>Personalized Service</h4>
+                                <p>Our experts work closely with you to understand your needs and preferences.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div>
+                                <h4>Peace of Mind</h4>
+                                <p>Comprehensive inspections and warranties on all our vehicles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="https://images.unsplash.com/photo-1489824904134-891ab64532f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1631&q=80" alt="LuxeDrive Showroom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be added here by JavaScript -->
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">$0</span>
+        </div>
+        <div class="cart-actions">
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>LuxeDrive</h3>
+                    <p>Your premier destination for luxury vehicles with exceptional service and curated selection.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#brands">Brands</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Vehicle Selection</a></li>
+                        <li><a href="#">Financing</a></li>
+                        <li><a href="#">Trade-In</a></li>
+                        <li><a href="#">Maintenance</a></li>
+                        <li><a href="#">Concierge</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Luxury Ave, Beverly Hills, CA 90210</li>
+                        <li><i class="fas fa-phone"></i> (310) 555-LUXE</li>
+                        <li><i class="fas fa-envelope"></i> info@luxedrive.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 9AM - 7PM</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LuxeDrive. All rights reserved. | Designed with <i class="fas fa-heart"></i> for car enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js">
+  
+    </script>
+
+       <script>
+        function updateclock() {
+            const now = new Date()
+
+            let hours = now.getHours()
+            let minutes = now.getMinutes()
+            let seconds = now.getSeconds()
+            let period = "AM"
+
+            if (hours >= 12) {
+                period = "PM"
+                if (hours > 12) {
+                    hours = hours - 12 // it mean when time is 1 o'clock (13) = output will be 13 - 12 = 1pm
+                }
+            }
+
+            if (hours === 0) {
+                hours = 12      // this means when in mindnight after 11:59 time is 00(12) so its converts in 12 o'clock in midnight
+            }
+
+            // this means its ternary operator add choose it because real time shows like this: 8 : 9 : 6. its not looking good and its also bad. so its try to when time or minutes is less than 10 its add 0 as string, so output is 08 : 09: 06
+            hours = hours < 10 ? "0" + hours : hours
+            minutes = minutes < 10 ? "0" + minutes : minutes
+            seconds = seconds < 10 ? "0" + seconds : seconds
+
+            const timestring = `${hours}:${minutes}:${seconds} ${period}`
+            document.getElementById("clock").textContent = timestring
+        }
+
+        // want to update time in every one second
+        // setInterval = (updateclock, 1000)
+        setInterval(() => {
+            updateclock()
+        }, 1000);
+
+        updateclock()
+    </script>
+</body>
+</html>
